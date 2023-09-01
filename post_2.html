@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>PH Tube</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Lato:wght@400;700&family=Work+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+    </script>
+</head>
+<body>
+    <!--Navigation Bar Start-->
+    <div class="navbar bg-base-100">
+      <div class="flex-auto">
+        <img class="md:object-scale-down sm: w-2/4" src="images/Logo.png" alt="">
+      </div>
+      <div class="navbar-center">
+        <a href="index.html" class="btn bg-red-500 text-white rounded-sm btn-xs sm:btn-sm md:btn-md lg:btn-lg">Home</a>
+      </div>
+      <div class="navbar-end">
+        <a href="blog.html" class="btn bg-red-500 text-white rounded-sm btn-xs sm:btn-sm md:btn-md lg:btn-lg">Blog</a>
+      </div>
+    </div>
+    <hr class="bg-slate-300">
+    <!--Navigation Bar End-->
+    <section class="bg-white dark:bg-gray-900">
+        <div class="container px-6 py-10 mx-auto">
+            <h1 class="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white">Recent posts </h1>
+    
+            <div class="mt-8 lg:-mx-6 lg:flex lg:items-center">
+                <img class="object-cover w-full lg:mx-6 lg:w-1/2 rounded-xl h-72 lg:h-96" src="images/nulland.png"alt="">
+    
+                <div class="mt-6 lg:w-1/2 lg:mt-0 lg:mx-6 ">
+                    <p class="text-sm text-red-500 uppercase">JavaScript</p>
+    
+                    <a href="#" class="block mt-4 text-2xl font-semibold text-gray-800 hover:underline dark:text-white">
+                        The Use Cases of Null and Undefined
+                    </a>
+    
+                    <p class="mt-3 text-sm text-black-700 dark:text-gray-300 lg:text-xl text-justify md:text-lg">
+                        Null and undefined are two important concepts in programming languages that indicates the presence or absences the value of an assigned variable.
+                    </p>
+                    <p class="mt-3 text-sm text-black-700 dark:text-gray-300 lg:text-xl text-justify md:text-lg">Null: Null is often used at the time of absence, initializations in of any value of a variable. Null is used for the validation, resetting of values or use as an optional function parameter. Sometimes null is used to represent the missing result or non-existing data.</p>
+                    <p class="mt-3 text-sm text-black-700 dark:text-gray-300 lg:text-xl text-justify md:text-lg">Undefined: When a variable is declared but not initialized the value is automatically turned to undefined. Sometimes for indicating missing parameter of an argument Undefined is used.</p>
+                    <p class="mt-3 text-sm text-black-700 dark:text-gray-300 lg:text-xl text-justify md:text-lg">The use case of null and undefined varies from programming languages. Improper uses of these case causes bugs in the code.
+                        </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
