@@ -51,5 +51,6 @@ const handleLoadnews = async (categoryId) => {
     cardContainer.appendChild(div);
   });
 };
+
 handleCategory();
 handleLoadnews("1000");
