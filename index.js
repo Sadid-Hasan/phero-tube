@@ -20,10 +20,11 @@ const handleLoadnews = async (categoryId) => {
   );
   const data = await response.json();
   const cardContainer = document.getElementById("card-container");
+  cardContainer.innerHTML="";
   data.data.forEach((news) => {
     const div = document.createElement("div");
     div.innerHTML = `
-      <div class="card bg-base-100 shadow-xl">
+      <div class="card bg-base-100">
         <figure>
           <img  class ="max-w-sm h-64" src="${news.thumbnail}" />
         </figure>
@@ -51,3 +52,4 @@ const handleLoadnews = async (categoryId) => {
   });
 };
 handleCategory();
+handleLoadnews("1000");
